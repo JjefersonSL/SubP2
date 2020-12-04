@@ -6,7 +6,7 @@ public class Pessoa {
     private String Nome;
     private String User;
     private int senha;
-    private Date Nasc;
+    private String Nasc;
 
     public String getNome() {
         return Nome;
@@ -32,11 +32,11 @@ public class Pessoa {
         this.senha = senha;
     }
 
-    public Date getNasc() {
+    public String getNasc() {
         return Nasc;
     }
 
-    public void setNasc(Date nasc) {
+    public void setNasc(String nasc) {
         Nasc = nasc;
     }
 }

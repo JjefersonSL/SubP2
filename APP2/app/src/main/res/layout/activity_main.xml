@@ -11,46 +11,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="47dp"
-        android:text="Button"
+        android:onClick="CadastrarPessoa"
+        android:text="CADASTRAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/Nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/User"
+        app:layout_constraintStart_toStartOf="@+id/User"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/User"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/Senha"
+        app:layout_constraintStart_toStartOf="@+id/Senha"
+        app:layout_constraintTop_toBottomOf="@+id/Nome" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/Senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-        app:layout_constraintStart_toStartOf="@+id/editTextDate"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintEnd_toEndOf="@+id/Data"
+        app:layout_constraintStart_toStartOf="@+id/Data"
+        app:layout_constraintTop_toBottomOf="@+id/User" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/Data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -58,7 +59,7 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/Senha" />
 
     <TextView
         android:id="@+id/textView5"
@@ -67,8 +68,8 @@
         android:layout_marginStart="3dp"
         android:layout_marginBottom="16dp"
         android:text="NOME"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
+        app:layout_constraintBottom_toTopOf="@+id/Nome"
+        app:layout_constraintStart_toStartOf="@+id/Nome" />
 
     <TextView
         android:id="@+id/textView6"
@@ -77,8 +78,8 @@
         android:layout_marginStart="3dp"
         android:layout_marginBottom="13dp"
         android:text="USUÁRIO"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintBottom_toTopOf="@+id/User"
+        app:layout_constraintStart_toStartOf="@+id/User" />
 
     <TextView
         android:id="@+id/textView7"
@@ -87,8 +88,8 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="13dp"
         android:text="SENHA"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toStartOf="@+id/User"
+        app:layout_constraintTop_toBottomOf="@+id/User" />
 
     <TextView
         android:id="@+id/textView8"
@@ -97,7 +98,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginBottom="10dp"
         android:text="DATA DE NASCIMENTO"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
-        app:layout_constraintStart_toStartOf="@+id/editTextDate" />
+        app:layout_constraintBottom_toTopOf="@+id/Data"
+        app:layout_constraintStart_toStartOf="@+id/Data" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
